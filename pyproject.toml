@@ -14,9 +14,12 @@ flake8 = "^7.0.0"
 pytest = "^8.1.1"
 pyinstaller = "^6.5.0"
 
+[tool.poetry.group.dev.dependencies]
+setuptools = "^69.2.0"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-luxtronik = "luxtronik:main"
+luxtronik = "Luxtronik.luxtronik:main"

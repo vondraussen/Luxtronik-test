@@ -52,6 +52,7 @@ class Luxtronik:
 def main():
     password = os.getenv('LUXT_PW', 290999)
     ip = os.getenv('LUXT_IP', '192.168.178.84')
+    print(f'connecting to {ip} with password {password}')
     lux = Luxtronik(ip, password=password)
     lux.login()
     print(lux.refresh())
