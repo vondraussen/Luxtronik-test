@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<Navigation id="0x2931d8">
+    <item id="0x28dea0">
+        <name>Informationen</name>
+        <item id="0x28d900">
+            <name>Temperaturen</name>
+        </item>
+        <item id="0x28d948">
+            <name>Eing&#xE4;nge</name>
+        </item>
+        <item id="0x28d990">
+            <name>Ausg&#xE4;nge</name>
+        </item>
+        <item id="0x28d9d8">
+            <name>Ablaufzeiten</name>
+        </item>
+        <item id="0x290008">
+            <name>Betriebsstunden</name>
+        </item>
+        <item id="0x28ff40">
+            <name>Fehlerspeicher</name>
+        </item>
+        <item id="0x28fef8">
+            <name>Abschaltungen</name>
+        </item>
+        <item id="0x28feb0">
+            <name>Anlagenstatus</name>
+        </item>
+        <item id="0x28fe68">
+            <name>W&#xE4;rmemenge </name>
+        </item>
+        <item id="0x28fe00">
+            <name>GLT</name>
+        </item>
+    </item>
+    <item id="0x293780">
+        <name>Einstellungen</name>
+        <item id="0x28be20">
+            <name>Betriebsart</name>
+        </item>
+        <item id="0x28b4b8">
+            <name>Temperaturen</name>
+        </item>
+        <item id="0x290498">
+            <name>System Einstellung</name>
+        </item>
+    </item>
+    <item id="0x293220">
+        <name>Zugang: Benutzer</name>
+    </item>
+</Navigation>
