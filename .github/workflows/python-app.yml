@@ -50,6 +50,7 @@ jobs:
         poetry run pytest
 
     - name: Create Executable
+      if: runner.os == 'Windows' && matrix.python-version == '3.12'
       run: |
         poetry run pyinstaller --onefile Luxtronik/luxtronik.py
 
