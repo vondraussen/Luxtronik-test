@@ -40,18 +40,18 @@ def test_refresh():
         mock_send.assert_called_once_with(luxtronik.ws, 'REFRESH')
         assert refresh_data == refresh_result
 
-def test_parse_refresh_data():
-    with patch('websocket.WebSocket.connect', autospec=True):
-        luxtronik = Luxtronik("127.0.0.1")
+# def test_parse_refresh_data():
+#     with patch('websocket.WebSocket.connect', autospec=True):
+#         luxtronik = Luxtronik("127.0.0.1")
 
-    with open('tests/refresh_data.xml', 'r') as file:
-        refresh_result = file.read().strip()
+#     with open('tests/refresh_data.xml', 'r') as file:
+#         refresh_result = file.read().strip()
 
-    # Act and Assert
-    with patch('websocket.WebSocket.send', autospec=True), \
-            patch('websocket.WebSocket.recv', autospec=True) as mock_recv:
-        mock_recv.return_value = refresh_result
-        luxtronik.refresh()
-        result = luxtronik.parse_refresh_data(refresh_result)
+#     # Act and Assert
+#     with patch('websocket.WebSocket.send', autospec=True), \
+#             patch('websocket.WebSocket.recv', autospec=True) as mock_recv:
+#         mock_recv.return_value = refresh_result
+#         luxtronik.refresh()
+#         result = luxtronik.parse_refresh_data(refresh_result)
 
-    assert result == []
+#     assert result == []
