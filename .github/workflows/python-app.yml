@@ -55,7 +55,7 @@ jobs:
 
     - name: Upload Binary
       uses: actions/upload-artifact@v4
-      if: runner.os == 'Windows' and matrix.python-version == '3.12'
+      if: runner.os == 'Windows' && matrix.python-version == '3.12'
       with:
         name: luxtronik-${{ matrix.python-version }}
         path: dist/luxtronik.exe
